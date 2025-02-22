@@ -1,0 +1,41 @@
+#ErrorDocument 404 http://mw0/onestopbeautyqueens/
+#ErrorDocument 403 http://mw0/onestopbeautyqueens/
+php_value include_path .;F:\MW2\BIG_02_L\web\onestopbeautyqueens_com_au\common
+php_value auto_prepend_file application.php
+php_value register_globals off
+
+DirectorySlash Off
+Options +FollowSymLinks
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /onestopbeautyqueens/
+
+#do nothing after one redirection - stops infinite loops
+RewriteCond %{ENV:REDIRECT_STATUS} 200
+RewriteRule .* - [L,S=6]
+
+#ignore all pictures
+RewriteRule \.(gif|jpg|png|pdf)$ - [L,S=5]
+
+#do nothing for requests to sitemap.xml
+RewriteRule ^sitemap\.xml$ - [L,S=4]
+RewriteRule ^autocomplete\.xml$ - [L,S=4]
+
+#do nothing for requests to html files
+RewriteRule ^([a-z0-9]+)\.html$ - [NC,L,S=3]
+
+#do nothing for requests to index.php
+RewriteRule ^index\.php$ - [L,S=2]
+
+#is the request not index.php?
+RewriteCond %{REQUEST_URI} !=/index.php
+#RewriteRule ^([a-z0-9]+\.?[a-z0-9]*)((\&[a-z0-9\_]+\=[a-z0-9\%\ \+\'\-\_\.\@]*)*)(\#[a-z0-9\_]*)?$ index.php?fuseaction=$1$2$4 [NC,L,S=1]
+RewriteRule ^([a-z0-9]+\.?[a-z0-9\_]*)((\&[a-z0-9\_]+\=[a-z0-9\%\ \+\'\-\_\.\@\(\)]*)*)(\#[a-z0-9\_]*)?$ index.php?fuseaction=$1$2$4 [NC,L,S=1]
+
+# Is the request for a non-existent file?
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+</IfModule>

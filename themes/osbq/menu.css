@@ -1,0 +1,317 @@
+#container {
+	width: 100%; 
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index:1000;
+	height: 80px;
+	padding-top: 20px;
+	background: rgba(0,0,0,0.9);
+}
+
+#osbq_logo {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	display: block;
+	width: 196px;
+	height: 69px;
+	background-image:url('../../images/osbq_logo.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0px 0px;
+	z-index: 1001;
+}
+
+#closemenu {
+	display: none;
+}
+
+.menucontainer {
+	display: table;
+	position: relative;
+}
+
+.menucontainer:target{
+    display:table;
+}
+
+.menuicon {
+	display: none;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 50px;
+	background: rgba(0,0,0,0.5);
+	z-index: 10000;
+}
+
+#navbar {
+	position: relative;
+	top: 0px;
+	left:0px;
+	display: table;
+	margin: 0px auto;
+	font-size: 18px;
+	font-family: "itc_avant_garde_gothic_demiRg", "Arial", "Verdana", sans-serif;
+}
+
+#navbar ul, #navbar li {
+	list-style: none; 
+}
+
+
+#nav {
+    margin: 0px;
+    z-index: 10;
+    display: block;
+}
+    		#nav li { float: right;} 
+   		
+        #nav li:hover { position: relative;}
+        #nav li:hover > a { 
+            background: rgba(128,128,128,0.9);
+            
+            /* smooth rollovers */
+            transition: background-color 0.3s ease;
+            -webkit-transition: background-color 0.3s ease;
+            -moz-transition: background-color 0.3s ease;
+            -o-transition: background-color 0.3s ease;
+            -ms-transition: background-color 0.3s ease;
+						/*********************/
+						
+            box-shadow: 5px 5px 25px #555;
+            -moz-box-shadow: 5px 5px 25px #555;
+            -webkit-box-shadow: 5px 5px 25px #555;
+    
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px; 
+                             
+        }
+            #nav li.sub:hover > a {
+                border-radius: 5px 5px 0 0;
+                -moz-border-radius: 5px 5px 0 0;
+                -webkit-border-radius: 5px 5px 0 0; 
+            }
+            
+            #nav li.subb:hover > a {
+                border-radius: 5px 5px 5px 5px;
+                -moz-border-radius: 5px 5px 5px 5px;
+                -webkit-border-radius: 5px 5px 5px 5px;
+            }
+
+            #nav li a {
+                color: #FFFFFF;
+                font-weight: bold;
+                text-decoration: none;
+                padding: 12px;
+                display: block;
+            }
+            #nav li a:hover { 
+            	color: #FFFFFF;
+            	background-color: rgba(128,128,128,0.9); 
+            }        
+                    
+    #nav li ul { 
+        background: rgba(255,255,255,0.8); 
+        margin-top: 0px;
+        margin-left: 0px;
+        display: none;
+        
+    }
+        #nav li:hover ul {
+            display:block; 
+            position:absolute; 
+        }
+
+        #nav li ul {
+            background: rgba(255,250,227,0.85); 
+            padding: 10px 5px;
+            
+            box-shadow: 5px 5px 25px #777;
+            -moz-box-shadow: 5px 5px 25px #777;
+            -webkit-box-shadow: 5px 5px 25px #777;
+            
+            border-radius: 0px 5px 5px 5px;
+            -moz-border-radius: 0px 5px 5px 5px;
+            -webkit-border-radius: 0px 5px 5px 5px;
+        }
+            #nav li ul li a, #nav li ul li a:hover {
+                background: transparent;
+                color: #000000;
+                width: 150px;
+                font-size: 0.9em;
+                font-weight: bold;
+                font-style: italic;
+            }
+            
+                #nav li ul li a:hover { text-decoration: none; 
+                		background: #000000;
+                		color: #FFFFFF; 
+                    box-shadow: 5px 5px 25px #EEE;
+                    -moz-box-shadow: 5px 5px 25px #EEE;
+                    -webkit-box-shadow: 5px 5px 25px #EEE;
+                            
+                    border-radius: 5px 5px 5px 5px;
+                    -moz-border-radius: 5px 5px 5px 5px;
+                    -webkit-border-radius: 5px 5px 5px 5px;
+
+                }
+
+.menu_popup {
+	display: none;
+	float: none;
+	position: relative;
+	width: 100%;
+	min-height: 100px;
+	padding-top: 2%;
+	background: rgba(0,0,0,0.9);
+}
+
+.popcont {
+	display: table;
+	position: relative;
+	width: 900px;
+	margin: 0px auto;
+	/*border: 1px solid #FF0000;*/
+}
+
+.popbut {
+	position: relative;
+	width: 100px;
+	display: block;
+	float: left;
+	font-size: 1.2em;
+	color: #FFFFFF;
+	font-family: 'arial', sans-serif;
+	font-weight:normal;
+	background-color: #000000;
+	padding: 10px;
+	margin: 5px;
+	margin-right: 20px;
+	margin-bottom: 8px;
+	border: 0px;
+	text-align: center;
+	border-radius: 7px;
+  -moz-border-radius: 7px;
+ 	-webkit-border-radius: 7px; 
+	box-shadow: 5px 5px 25px #888;
+}
+
+.popbut:hover,
+.popbut:focus {
+  background-color: #FFFFFF;
+  color:#000000;
+  opacity: 0.8;
+}
+
+.popbut a:link, 
+.popbut a:hover, 
+.popbut a:active, 
+.popbut a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight:bold;
+}
+
+@media screen and (max-width: 1090px) {
+	#navbar {
+		font-size: 15px;
+		float: right;
+		margin-right: 20px;
+	}
+}
+
+@media screen and (max-width: 890px) {
+	.popcont {
+		width: 470px;
+	}
+}
+
+@media screen and (max-width: 795px) {
+
+	#navbar {
+		float: none;
+		margin: 0px auto;
+	}
+	
+	#osbq_logo {
+		position: relative;
+		top: 0px;
+		margin: 0px auto;
+		width: 313px;
+		height: 110px;
+		background-size: 100%;
+	}
+  
+  #nav {
+  	padding-left: 0px;
+	}
+    
+  #nav li a {
+		color: #FFFFFF;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 12px;
+		padding-right: 8px;
+		padding-left: 5px;
+	}
+}
+
+@media screen and (max-width: 544px) {
+	#navbar {
+		font-size: 13px;
+	}
+	
+}
+
+@media screen and (max-width: 475px) {
+	
+	#closemenu {
+		display: table;
+	}
+
+	#nav li { 
+		float: none;
+		width: 90%;
+	} 
+	.menucontainer {
+		display: none;
+	}
+	
+	.menucontainer:target{
+    padding-top: 70px !important;
+	}
+	
+	.menuicon {
+		display: block;
+		
+	}
+	
+	#osbq_logo {
+		display: none;
+	}
+	
+	.menu_popup {
+		display: table;
+	}
+
+	.popcont {
+		width: 300px;
+	}
+	
+	#nav {
+		width: 100%;
+		background: rgba(0,0,0,0.9); 
+		padding-left: 5px;
+		padding-bottom: 10px;
+	}
+	
+	#navbar {
+		position: relative;
+		display: table;
+		width: 100%;
+	}
+}
