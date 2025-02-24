@@ -1,3 +1,42 @@
+
+/* custome css start 22/02/2025 */
+
+@media (min-width:700px) {
+
+	article section {
+		padding: 3em;
+		padding-top: 1em;
+		padding-bottom: 2em;
+	  }
+	  div#Owner-Introduction-Section {
+		margin-bottom: 85px;
+	}
+	
+}
+
+@media (max-width:600px) {
+	article .container {
+		padding: 18px 10px;
+	}
+	form#service_search_form{
+		display: flex;
+		justify-content: center;
+	}
+	.main-frame article section {
+		padding: 20px 15px;
+	}
+	
+}
+
+
+
+
+
+/* end */
+
+
+
+
 .parallax [class*="para_"] {
  position: relative;
   height: 50vh;
@@ -84,7 +123,6 @@ article {
 }
 
 article .container {
-  width: 100%;
   margin: 0px auto;
   opacity: 0.9;
   font-size: 1.2em;
@@ -101,13 +139,7 @@ article header {
 article h1, article h2 {
   margin: 0 0 0.333em;
 }
-article section {
-  padding: 3em;
-  /* padding-right: 3em;
-  padding-left: 3em; */
-  padding-top: 1em;
-  padding-bottom: 2em;
-}
+
 article section.parallax {
   margin: 0px;
   padding: 0px;
@@ -116,6 +148,7 @@ article section.parallax {
 a, a:visited, a:active {
   color: #f66;
 }
+
 
 
 @media screen and (min-width: 1280px) {
@@ -202,10 +235,10 @@ a, a:visited, a:active {
 	}
 	
 	.parallax .news {
-	  top: 1%;
-	  left: 4%;
-	  width: 49%;
-	  font-size: 14px;
+		top: 1%;
+        left: 1%;
+        width: 61%;
+        font-size: 14px;
 	}
 	
 	.parallax .desc {

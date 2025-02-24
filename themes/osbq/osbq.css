@@ -15,6 +15,30 @@ html, body {
 	scrollbar-darkshadow-color: #000000;
 }
 
+.smallsec.wide h2:first-of-type {
+    color: #713434;
+}
+.smallsec.wide h2:last-of-type {
+	color: black
+}
+.wide {
+	display: table;
+	text-align: left !important;
+	min-height: 10px !important;
+	height: 10px !important;
+	margin-bottom: 15px;
+}
+@media (min-width:600px) {
+	.wide {
+		display: table;
+		width: 95% !important;
+		text-align: left !important;
+		min-height: 10px !important;
+		height: 10px !important;
+		margin-bottom: 15px;
+	}
+	
+}
 /* ------------- General ------------- */
 /*@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');*/
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Parisienne&display=swap');
@@ -551,7 +575,7 @@ h3 {
 	display: table;
 	position: relative;
   width: 100%;
-  padding-top: 20px;
+  /* padding-top: 20px; */
   padding-bottom: 20px;
   padding-left: 0px;
   margin-bottom:0px;
@@ -742,14 +766,7 @@ h3 {
 	min-height: 50px !important;
 }
 
-.wide {
-	display: table;
-	width: 95% !important;
-	text-align: left !important;
-	min-height: 10px !important;
-	height: 10px !important;
-	margin-bottom: 15px;
-}
+
 
 .faqwide {
 	display: none;
@@ -885,7 +902,7 @@ h3 {
 .slide_spacer {
 	display: block;
 	width:99%;
-	height: 48px !important;
+	height: 46px !important;
 }
 
 .topcont{
@@ -1864,7 +1881,6 @@ height:50px;
 		float: right;
 		text-align: left;
 		padding: 10px;
-		margin: 5px;
 		border: 1px solid;
 		height: 320px;
 		min-height: 300px;
@@ -2113,11 +2129,16 @@ height:50px;
 	
 	.staffpic{
 		display: table;
-		float: left;
-		padding: 2%;
-		max-width: 80%;
+        float: none;
+        padding: 0;
+        max-width: 100%;
 	}
-
+	.staffdesc {
+		display: table;
+		float: none;
+		padding: 0;
+		max-width: 100%;
+	}
 			
 	.smallsec {
 		width: 90%;
@@ -2158,7 +2179,7 @@ height:50px;
 		position: relative;
 		display: block;
 		width: 100%;
-		min-height: 30px;
+		/* min-height: 30px;	 */
 	}
 	
 		

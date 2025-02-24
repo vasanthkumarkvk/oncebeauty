@@ -111,9 +111,9 @@
             </div-->
 
         </div-->
-        <div class="container py-5">
-            <div class="main-frame p-4 shadow-lg rounded bg-light">
-                <div id="blog-details" class="p-3">
+        <div class="container ">
+            <div class="main-frame shadow-lg rounded bg-light">
+                <div id="blog-details" class="  ">
                     <!-- Blog content will be loaded here -->
                 </div>
             </div>
@@ -687,6 +687,24 @@
 
 
 <style>
+    
+    @media (max-width:600px) {
+        #blog-details {
+            gap: 0px !important;
+        }
+
+        div#blog-details h1 {
+            margin: 25px 13px -25px;
+        }
+
+        .tip-image {
+            width: 100% !important;
+            border-radius: 8px;
+            margin-left: 0px !important;
+        }
+    }
+
+
     #blog-details {
         display: flex;
         flex-direction: column;

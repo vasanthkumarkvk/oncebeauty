@@ -108,9 +108,9 @@
 
         </div-->
 
-        <div class="container py-5">
-            <div class="main-frame p-4 shadow-lg rounded bg-light">
-                <div id="blog-details" class="p-3">
+        <div class="container ">
+            <div class="main-frame  shadow-lg rounded bg-light">
+                <div id="blog-details" class="">
                     <!-- Blog content will be loaded here -->
                 </div>
             </div>
@@ -639,6 +639,20 @@
         margin: 5px 0;
         line-height: 1.6;
         color: #555;
+    }
+
+    @media (max-width:600px) {
+        #blog-details {
+    gap: 0px !important;
+}
+div#blog-details h1 {
+    margin: 19px 11px -22px;
+}
+.tip-image {
+    width: 100%;
+    margin-left: 0px !important;
+}
+        
     }
 </style>
 
